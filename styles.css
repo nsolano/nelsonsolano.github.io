@@ -34,19 +34,11 @@ body {
     font-size: 1.5rem;
 }
 
-.navbar-left span {
-    color: #569cd6;
-    font-size: 1rem;
-}
-
-.navbar-right ul {
+.navbar-right ul, .navbar-right ul li {
     list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-right ul li {
     margin: 0 10px;
+    padding: 0;
+    display: flex;
 }
 
 .navbar-right ul li a {
@@ -54,6 +46,7 @@ body {
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s;
+    list-style: none;
 }
 
 .navbar-right ul li a:hover {
@@ -64,64 +57,6 @@ body {
     font-size: 1.5rem;
 }
 
-.navbar-toggle {
-    display: none;
-    color: #dcdcdc;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-/* Responsive Toggle */
-@media (max-width: 768px) {
-    .navbar-right ul {
-        flex-direction: column;
-        display: none;
-        background-color: #333;
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        padding: 10px;
-        border-radius: 8px;
-    }
-
-    .navbar-right ul.show {
-        display: flex;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-}
-
-/* Navigation bar styling */
-/* .navbar {
-    background-color: #333;
-    padding: 15px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar ul {
-    list-style: none;
-}
-
-.navbar ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: #dcdcdc;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #569cd6;
-} */
 
 /* Layout and centering */
 .container {
@@ -142,7 +77,7 @@ header {
 header h1 {
     font-size: 3em;
     font-weight: 700;
-    color: #c586c0;
+    color: #d7e7f6;
 }
 
 header h2 {
@@ -158,7 +93,7 @@ section {
 section h3 {
     margin-bottom: 15px;
     font-size: 1.5em;
-    color: #c586c0;
+    color: #d7e7f6;
 }
 
 section p, section ul {
@@ -216,23 +151,6 @@ ul li::before {
     background-color: #569cd6; /* Hover color */
 }
 
-/* CV Download button */
-.cv-btn {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 1em;
-    background-color: #3a3d41;
-    color: #dcdcdc;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.cv-btn:hover {
-    background-color: #569cd6;
-}
-
 /* Footer and Contact button */
 footer {
     text-align: center;
@@ -242,22 +160,6 @@ footer {
 footer p {
     font-size: 0.9em;
     color: #888;
-}
-
-.contact-btn {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 1em;
-    background-color: #3a3d41;
-    color: #dcdcdc;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-btn:hover {
-    background-color: #569cd6;
 }
 
 a {
