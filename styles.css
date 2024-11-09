@@ -45,8 +45,7 @@ body {
     color: #dcdcdc;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s;
-    list-style: none;
+    transition: color 0.3s;    
 }
 
 .navbar-right ul li a:hover {
@@ -128,6 +127,27 @@ ul li::before {
     margin: 5px;
     font-size: 0.9em;
 }
+
+ /* Awards Table Styling */
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #333;
+    color: #569cd6;
+  }
+
+  tr:nth-child(even) {
+    background-color: #222;
+  }
 
 /* Social section styling */
 .social-links {
