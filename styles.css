@@ -34,18 +34,18 @@ body {
     font-size: 1.5rem;
 }
 
-.navbar-right ul, .navbar-right ul li {
-    list-style: none;
+.navbar-right ul, .navbar-right ul li {    
     margin: 0 10px;
-    padding: 0;
-    display: flex;
+    padding-top: 2px;
+    padding-left: 0;
+    display: flex;     
 }
 
 .navbar-right ul li a {
     color: #dcdcdc;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s;    
+    transition: color 0.3s;      
 }
 
 .navbar-right ul li a:hover {
@@ -110,11 +110,40 @@ ul li {
     color: #dcdcdc;
 }
 
-ul li::before {
+.container ul li a {   
+    text-decoration: none;
+    transition: color 0.3s;        
+}
+
+.container ul li a:hover {
+    color: #569cd6;
+}
+
+.container ul li::before {
     content: '•';
     position: absolute;
     left: 0;
     color: #888;
+}
+
+/* About section layout */
+.about-container {    
+    overflow: hidden; 
+    gap: 30px;  
+    
+}
+
+/* Profile picture styling */
+.profile-picture {
+    
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;   
+    padding: 5px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: right;
+    shape-outside: circle();     
 }
 
 /* Skills section */
@@ -128,7 +157,7 @@ ul li::before {
     font-size: 0.9em;
 }
 
- /* Awards Table Styling */
+ /* Invites Table Styling */
  table {
     width: 100%;
     border-collapse: collapse;
@@ -142,11 +171,15 @@ ul li::before {
 
   th {
     background-color: #333;
-    color: #569cd6;
+    color: #569cd6;    
+  }
+
+  tr{
+    border-bottom: 0.3px solid #b6d8f3;       
   }
 
   tr:nth-child(even) {
-    background-color: #222;
+    background-color: #222;    
   }
 
 /* Social section styling */
